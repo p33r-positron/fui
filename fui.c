@@ -49,7 +49,7 @@ int main(int argc, char** argv)
 	if(argc != 2)
 		return printf("Usage: fui <file.fu>\r\n")-21;
 
-	in = fopen(argv[1], "r");
+	in = fopen(argv[1], "rb");
 
 	if(in == NULL)
 		return printf("Error opening input file.\r\n")-26;
